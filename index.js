@@ -41,6 +41,13 @@ class Stack {
    static isStack (el){
    	return el instanceof Stack
    }
+
+  removeFirst(){
+    if(this.lenght>0){
+      this.headNode = this.headNode.next;
+      this.lenght--
+    }
+  }
 }
 
 const myBookStack = new Stack()
